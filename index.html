@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BOTCOIN</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="botcss.css" />
+    <link rel="stylesheet" type="text/css" href="css/output.css" />
+    <!-- chartjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </head>
+  <body class="w-full h-full">
+    <div class="h-full overflow-auto">
+      <div className="flex flex-col flex-auto h-full">
+        <div class="w-full flex flex-auto">
+          <!-- Menubar -->
+          <div class="flex-shrink-0 px-2">
+            <div id="toggleMenu" onclick="toggleMenu()"></div>
+            <nav id="menu" class="-left-[150px]">
+              <div>
+                <p id="p1">Ví USDT: 100000</p>
+              </div>
+              <ul>
+                <li>
+                  <!--tạo cart -->
+
+                  <div class="cart1">
+                    <div class="cartin relative">
+                      <!-- Cử sổ edit -->
+                      <div class="absolute top-2 right-2 w-5 h-5">
+                        <button
+                          id=""
+                          class="w-full h-full popup-btn"
+                          onclick=""
+                        >
+                          <div class="w-full h-full">
+                            <img
+                              class="w-full h-full"
+                              src="Icon/ci_settings-filled.png"
+                              alt="edit"
+                            />
+                          </div>
+                        </button>
+                      </div>
+                      <div class="popup">
+                        <!-- nội dung trên cửa sổ popup-->
+                        <div class="popup-content">
+                          <span class="close-btn">&times;</span>
+                          <a href="#">
+                            <!--<button id="save-btn">-->
+                            <div id="btnedit2" onclick="">
+                              <img src="Icon/saveimg.png" alt="save" />
+                            </div>
+                            <!--</button>-->
+                          </a>
+                          <div>
+                            <table>
+                              <tr class="space-y-2">
+                                <th>Name:</th>
+                                <th id="labeledit">BTC</th>
+                              </tr>
+                              <tr>
+                                <th>Min:</th>
+                                <th id="labeledit">100</th>
+                              </tr>
+                              <tr>
+                                <th>Max:</th>
+                                <th id="labeledit">100</th>
+                              </tr>
+                              <tr>
+                                <th></th>
+                                <th>
+                                  <form>
+                                    <select name="hold" id="formactive">
+                                      <option value="hold">Hold</option>
+                                      <option value="abc">abc</option>
+                                      <option value="xyz">xyz</option>
+                                      <option value="dfg">Action</option>
+                                    </select>
+                                  </form>
+                                </th>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <!--các phần khác-->
+                      <p id="P1">BTC</p>
+                      <p id="p2">Min: 100</p>
+                      <p id="p2">Max: 100</p>
+                      <p id="p2">Hold</p>
+                      <p id="p2">Active</p>
+                    </div>
+                  </div>
+                </li>
+                <!--Script xử lý btn edit-->
+                <script src="scredit.js"></script>
+                <li>
+                  <div class="cart2">
+                    <div class="cartin relative">
+                      <div class="absolute top-2 right-2 w-5 h-5">
+                        <button
+                          id=""
+                          class="w-full h-full popup-btn"
+                          onclick=""
+                        >
+                          <div class="w-full h-full">
+                            <img
+                              class="w-full h-full"
+                              src="Icon/ci_settings-filled.png"
+                              alt="edit"
+                            />
+                          </div>
+                        </button>
+                      </div>
+                      <div class="popup">
+                        <!-- nội dung trên cửa sổ popup-->
+                        <div class="popup-content">
+                          <span class="close-btn">&times;</span>
+                          <a href="#">
+                            <!--<button id="save-btn">-->
+                            <div id="btnedit2" onclick="">
+                              <img src="Icon/saveimg.png" alt="save" />
+                            </div>
+                            <!--</button>-->
+                          </a>
+                          <div>
+                            <table>
+                              <tr>
+                                <th>Name:</th>
+                                <th id="labeledit">BTC</th>
+                              </tr>
+                              <tr>
+                                <th>Min:</th>
+                                <th id="labeledit">100</th>
+                              </tr>
+                              <tr>
+                                <th>Max:</th>
+                                <th id="labeledit">100</th>
+                              </tr>
+                              <tr>
+                                <th></th>
+                                <th>
+                                  <form>
+                                    <select name="hold" id="formactive">
+                                      <option value="hold">Hold</option>
+                                      <option value="abc">abc</option>
+                                      <option value="xyz">xyz</option>
+                                      <option value="dfg">Action</option>
+                                    </select>
+                                  </form>
+                                </th>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <!--các phần khác-->
+                      <p id="P1">BTC</p>
+                      <p id="p2">Min: 100</p>
+                      <p id="p2">Max: 100</p>
+                      <p id="p2">Hold</p>
+                      <p id="p2">Active</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="cart3">
+                    <div class="cartin relative">
+                      <div class="absolute top-2 right-2 w-5 h-5">
+                        <button
+                          id=""
+                          class="w-full h-full popup-btn"
+                          onclick=""
+                        >
+                          <div class="w-full h-full">
+                            <img
+                              class="w-full h-full"
+                              src="Icon/ci_settings-filled.png"
+                              alt="edit"
+                            />
+                          </div>
+                        </button>
+                      </div>
+                      <div class="popup">
+                        <!-- nội dung trên cửa sổ popup-->
+                        <div class="popup-content">
+                          <span class="close-btn">&times;</span>
+                          <a href="#">
+                            <!--<button id="save-btn">-->
+                            <div id="btnedit2" onclick="">
+                              <img src="Icon/saveimg.png" alt="save" />
+                            </div>
+                            <!--</button>-->
+                          </a>
+                          <div>
+                            <table>
+                              <tr>
+                                <th>Name:</th>
+                                <th id="labeledit">BTC</th>
+                              </tr>
+                              <tr>
+                                <th>Min:</th>
+                                <th id="labeledit">100</th>
+                              </tr>
+                              <tr>
+                                <th>Max:</th>
+                                <th id="labeledit">100</th>
+                              </tr>
+                              <tr>
+                                <th></th>
+                                <th>
+                                  <form>
+                                    <select name="hold" id="formactive">
+                                      <option value="hold">Hold</option>
+                                      <option value="abc">abc</option>
+                                      <option value="xyz">xyz</option>
+                                      <option value="dfg">Action</option>
+                                    </select>
+                                  </form>
+                                </th>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <!--các phần khác-->
+                      <p id="P1">BTC</p>
+                      <p id="p2">Min: 100</p>
+                      <p id="p2">Max: 100</p>
+                      <p id="p2">Hold</p>
+                      <p id="p2">Active</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="cart4">
+                    <div class="cartin relative">
+                      <div class="absolute top-2 right-2 w-5 h-5">
+                        <button
+                          id=""
+                          class="w-full h-full popup-btn"
+                          onclick=""
+                        >
+                          <div class="w-full h-full">
+                            <img
+                              class="w-full h-full"
+                              src="Icon/ci_settings-filled.png"
+                              alt="edit"
+                            />
+                          </div>
+                        </button>
+                      </div>
+                      <div class="popup">
+                        <!-- nội dung trên cửa sổ popup-->
+                        <div class="popup-content">
+                          <span class="close-btn">&times;</span>
+                          <a href="#">
+                            <!--<button id="save-btn">-->
+                            <div id="btnedit2" onclick="">
+                              <img src="Icon/saveimg.png" alt="save" />
+                            </div>
+                            <!--</button>-->
+                          </a>
+                          <div>
+                            <table>
+                              <tr>
+                                <th>Name:</th>
+                                <th id="labeledit">BTC</th>
+                              </tr>
+                              <tr>
+                                <th>Min:</th>
+                                <th id="labeledit">100</th>
+                              </tr>
+                              <tr>
+                                <th>Max:</th>
+                                <th id="labeledit">100</th>
+                              </tr>
+                              <tr>
+                                <th></th>
+                                <th>
+                                  <form>
+                                    <select name="hold" id="formactive">
+                                      <option value="hold">Hold</option>
+                                      <option value="abc">abc</option>
+                                      <option value="xyz">xyz</option>
+                                      <option value="dfg">Action</option>
+                                    </select>
+                                  </form>
+                                </th>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <!--các phần khác-->
+                      <p id="P1">BTC</p>
+                      <p id="p2">Min: 100</p>
+                      <p id="p2">Max: 100</p>
+                      <p id="p2">Hold</p>
+                      <p id="p2">Active</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <script>
+            /* đóng mở menu*/
+            var toggleStatus = 0;
+            function toggleMenu() {
+              if (toggleStatus == 1) {
+                document.getElementById("menu").style.left = "-150px";
+                toggleStatus = 0;
+              } else if (toggleStatus == 0) {
+                document.getElementById("menu").style.left = "46px";
+                toggleStatus = 1;
+              }
+            }
+          </script>
+
+          <!-- Phần main-->
+          <div
+            class="bg-black space-y-2 relative flex flex-col flex-auto w-0 min-h-0 overflow-hidden p-2"
+          >
+            <div class="w-full space-y-2">
+              <!--BARCHAR-->
+              <!--barchar riêng một div-->
+              <div class="bg-gray-50 p-3 rounded">
+                <canvas id="bar-chart" width="900" height="170"></canvas>
+                <!-- Chartjs được dùng tại đây -->
+                <script src="barchart.js">
+                  // Bar chart
+                </script>
+              </div>
+
+              <!--dùng grid chia 2 cột 1 hàng-->
+              <div class="grid grid-cols-10 gap-2">
+                <div class="item col-span-10 md:col-span-8">
+                  <!--LINECHAR-->
+                  <div class="bg-gray-50 p-3 rounded">
+                    <div class="relative h-[700px]">
+                      <canvas id="line-chart"></canvas>
+                    </div>
+                  </div>
+                  <script src="linechart.js"></script>
+                </div>
+                <div class="item col-span-10 md:col-span-2">
+                  <!--Chia tiếp 2 hàng 1 cột-->
+                  <div class="flex flex-col h-full">
+                    <!--LIST MINI CART-->
+                    <div class="item item3 flex-grow pt-2">
+                      <ul class="space-y-2">
+                        <li class="flex">
+                          <!--tạo cart -->
+                          <div>
+                            <div
+                              class="w-2 bg-blue-500 h-full flex-shrink-0 block"
+                            ></div>
+                          </div>
+                          <div class="cartinMINI flex-grow">
+                            <div class="container3">
+                              <div class="item item5">
+                                <!-- Click mở cửa sổ detail -->
+                                <button id="popup2-btn">
+                                  <div class="btndetail">
+                                    <span>BTC</span>
+                                  </div>
+                                </button>
+                              </div>
+                              <div class="popup2">
+                                <!-- nội dung trên cửa sổ popup-->
+                                <div class="popup2-content">
+                                  <span class="close-btn2">&times;</span>
+                                  <div>
+                                    <table>
+                                      <tr>
+                                        <th id="p3">BTC</th>
+                                        <th id="p3">MUA</th>
+                                        <th id="p3">BÁN</th>
+                                        <th id="p3">TỔNG</th>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item item6">
+                                <span id="p4">
+                                  + 10938.53 USDT
+                                  <br />
+                                  10:15:20
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!--Script xử lý btn detail-->
+                        <script src="scrdetail.js"></script>
+
+                        <li class="flex">
+                          <!--tạo cart -->
+                          <div>
+                            <div
+                              class="w-2 bg-red-900 h-full flex-shrink-0 block"
+                            ></div>
+                          </div>
+                          <div class="cartinMINI flex-grow">
+                            <div class="container3">
+                              <div class="item item5">
+                                <!-- Click mở cửa sổ detail -->
+                                <button id="popup2-btn">
+                                  <div class="btndetail">
+                                    <span>BTC</span>
+                                  </div>
+                                </button>
+                              </div>
+                              <div class="popup2">
+                                <!-- nội dung trên cửa sổ popup-->
+                                <div class="popup2-content">
+                                  <span class="close-btn2">&times;</span>
+                                  <div>
+                                    <table>
+                                      <tr>
+                                        <th id="p3">BTC</th>
+                                        <th id="p3">MUA</th>
+                                        <th id="p3">BÁN</th>
+                                        <th id="p3">TỔNG</th>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item item6">
+                                <span id="p4">
+                                  + 10938.53 USDT
+                                  <br />
+                                  10:15:20
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="flex">
+                          <!--tạo cart -->
+                          <div>
+                            <div
+                              class="w-2 bg-green-700 h-full flex-shrink-0 block"
+                            ></div>
+                          </div>
+                          <div class="cartinMINI flex-grow">
+                            <div class="container3">
+                              <div class="item item5">
+                                <!-- Click mở cửa sổ detail -->
+                                <button id="popup2-btn">
+                                  <div class="btndetail">
+                                    <span>BTC</span>
+                                  </div>
+                                </button>
+                              </div>
+                              <div class="popup2">
+                                <!-- nội dung trên cửa sổ popup-->
+                                <div class="popup2-content">
+                                  <span class="close-btn2">&times;</span>
+                                  <div>
+                                    <table>
+                                      <tr>
+                                        <th id="p3">BTC</th>
+                                        <th id="p3">MUA</th>
+                                        <th id="p3">BÁN</th>
+                                        <th id="p3">TỔNG</th>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item item6">
+                                <span id="p4">
+                                  + 10938.53 USDT
+                                  <br />
+                                  10:15:20
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="flex">
+                          <!--tạo cart -->
+                          <div>
+                            <div
+                              class="w-2 bg-yellow-50 h-full flex-shrink-0 block"
+                            ></div>
+                          </div>
+                          <div class="cartinMINI flex-grow">
+                            <div class="container3">
+                              <div class="item item5">
+                                <!-- Click mở cửa sổ detail -->
+                                <button id="popup2-btn">
+                                  <div class="btndetail">
+                                    <span>BTC</span>
+                                  </div>
+                                </button>
+                              </div>
+                              <div class="popup2">
+                                <!-- nội dung trên cửa sổ popup-->
+                                <div class="popup2-content">
+                                  <span class="close-btn2">&times;</span>
+                                  <div>
+                                    <table>
+                                      <tr>
+                                        <th id="p3">BTC</th>
+                                        <th id="p3">MUA</th>
+                                        <th id="p3">BÁN</th>
+                                        <th id="p3">TỔNG</th>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item item6">
+                                <span id="p4">
+                                  + 10938.53 USDT
+                                  <br />
+                                  10:15:20
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--REALTIME COIN-->
+                    <div class="item item4">
+                      <img src="Realtimeplus.png" alt="Coin realtime" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
